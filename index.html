@@ -13,7 +13,7 @@
 <meta property="og:description" content="How DeTauro collects, uses, and protects your information.">
 <meta property="og:site_name" content="DeTauro">
 
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%230A0C12'/%3E%3Ccircle cx='50' cy='50' r='30' fill='none' stroke='%234F7CFF' stroke-width='6'/%3E%3Ccircle cx='50' cy='50' r='10' fill='%23FFB020'/%3E%3C/svg%3E">
+<link rel="icon" type="image/png" href="logo.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,16 +32,13 @@
   <div class="nav-inner">
     <a href="#top" class="brand" aria-label="DeTauro home">
       <span class="brand-mark" aria-hidden="true">
-        <svg viewBox="0 0 40 40" width="28" height="28">
-          <circle cx="20" cy="20" r="18" fill="none" stroke="var(--signal)" stroke-width="2.4"/>
-          <circle cx="20" cy="20" r="10" fill="none" stroke="var(--violet)" stroke-width="2.4" opacity="0.85"/>
-          <circle cx="20" cy="20" r="3.4" fill="var(--ember)"/>
-        </svg>
+        <img src="logo.png" alt="" width="26" height="26">
       </span>
       <span class="brand-name">DeTauro</span>
     </a>
 
     <nav class="nav-links" aria-label="Page sections">
+      <a href="#offline" data-i18n="nav.offline">Offline-first</a>
       <a href="#collect" data-i18n="nav.collect">Data</a>
       <a href="#permissions" data-i18n="nav.permissions">Permissions</a>
       <a href="#rights" data-i18n="nav.rights">Your rights</a>
@@ -64,39 +61,15 @@
 
 <!-- ============ HERO ============ -->
 <section class="hero" id="top">
-  <div class="hero-aperture" aria-hidden="true">
-    <svg viewBox="0 0 200 200" class="aperture-svg">
-      <defs>
-        <linearGradient id="bladeGrad" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="var(--signal)"/>
-          <stop offset="100%" stop-color="var(--violet)"/>
-        </linearGradient>
-        <path id="blade" d="M100,100 L96,18 L118,32 Z" fill="url(#bladeGrad)"/>
-      </defs>
-      <circle cx="100" cy="100" r="94" class="ring ring-outer"/>
-      <circle cx="100" cy="100" r="70" class="ring ring-mid"/>
-      <g class="blade-group">
-        <use href="#blade" transform="rotate(0 100 100)"/>
-        <use href="#blade" transform="rotate(40 100 100)"/>
-        <use href="#blade" transform="rotate(80 100 100)"/>
-        <use href="#blade" transform="rotate(120 100 100)"/>
-        <use href="#blade" transform="rotate(160 100 100)"/>
-        <use href="#blade" transform="rotate(200 100 100)"/>
-        <use href="#blade" transform="rotate(240 100 100)"/>
-        <use href="#blade" transform="rotate(280 100 100)"/>
-        <use href="#blade" transform="rotate(320 100 100)"/>
-      </g>
-      <circle cx="100" cy="100" r="14" class="lens-core"/>
-    </svg>
-  </div>
-
   <div class="hero-content reveal">
+    <img class="hero-logo" src="logo.png" alt="DeTauro logo">
     <p class="eyebrow" data-i18n="hero.eyebrow">Legal &amp; Trust</p>
     <h1 class="hero-title">DeTauro</h1>
     <p class="hero-kicker" data-i18n="hero.kicker">Privacy Policy</p>
-    <p class="hero-sub" data-i18n="hero.subtitle">Your privacy matters. DeTauro is designed to help you stay focused while respecting and protecting your personal data.</p>
+    <p class="hero-sub" data-i18n="hero.subtitle">Your privacy matters. DeTauro works completely offline and processes everything locally on your device — nothing is uploaded, ever.</p>
     <div class="hero-meta">
       <span class="pill"><span class="pill-dot"></span><span data-i18n="hero.updatedLabel">Last updated</span>&nbsp;—&nbsp;<span id="lastUpdated">July 18, 2026</span></span>
+      <span class="pill" data-i18n="hero.offlineBadge">100% offline · no cloud</span>
       <a class="pill pill-link" href="#permissions" data-i18n="hero.viewPermissions">View permissions</a>
     </div>
   </div>
@@ -112,8 +85,43 @@
   </div>
   <div class="prose">
     <p data-i18n="intro.p1">DeTauro is a focus and app-blocking application built to help you spend less time on distracting apps and more time on what matters. This policy explains, in plain language, what information DeTauro interacts with, why, and how it is protected.</p>
-    <p data-i18n="intro.p2">By using DeTauro, you agree to the practices described in this Privacy Policy. If you do not agree with any part of it, please discontinue use of the application.</p>
+    <p data-i18n="intro.p2">DeTauro is completely offline-first: there is no user account, no cloud database, and no remote server. Everything described in this Policy happens locally, on your device.</p>
+    <p data-i18n="intro.p3">By using DeTauro, you agree to the practices described in this Privacy Policy. If you do not agree with any part of it, please discontinue use of the application.</p>
   </div>
+</section>
+
+<!-- ============ OFFLINE BY DESIGN ============ -->
+<section class="section reveal" id="offline">
+  <div class="section-head">
+    <span class="section-eyebrow" data-i18n="offline.eyebrow">Offline-first</span>
+    <h2 data-i18n="offline.title">Built to work entirely offline</h2>
+    <p class="section-desc" data-i18n="offline.desc">DeTauro has no Firebase, no cloud database, no online user accounts, no remote analytics, and no server-side processing of any kind. Privacy isn't a setting — it's how the app is built.</p>
+  </div>
+
+  <h3 class="subhead" data-i18n="offline.deviceHeading">What stays on your device</h3>
+  <ul class="check-list">
+    <li data-i18n="offline.device1">Your settings remain on your device</li>
+    <li data-i18n="offline.device2">Focus sessions remain on your device</li>
+    <li data-i18n="offline.device3">Blocking configuration remains on your device</li>
+    <li data-i18n="offline.device4">Statistics remain on your device</li>
+    <li data-i18n="offline.device5">Accessibility processing happens locally</li>
+    <li data-i18n="offline.device6">Usage Access is processed locally</li>
+    <li data-i18n="offline.device7">No browsing history is uploaded</li>
+    <li data-i18n="offline.device8">No application usage information is uploaded</li>
+    <li data-i18n="offline.device9">No personal information is transmitted to external servers</li>
+  </ul>
+
+  <h3 class="subhead subhead-spaced" data-i18n="offline.principlesHeading">Our privacy principles</h3>
+  <ul class="check-list">
+    <li data-i18n="offline.principle1">Everything is processed locally</li>
+    <li data-i18n="offline.principle2">No user account is required</li>
+    <li data-i18n="offline.principle3">No registration is required</li>
+    <li data-i18n="offline.principle4">No cloud synchronization exists</li>
+    <li data-i18n="offline.principle5">No personal data is sold</li>
+    <li data-i18n="offline.principle6">No personal data is shared</li>
+    <li data-i18n="offline.principle7">No advertising identifiers are collected</li>
+    <li data-i18n="offline.principle8">No behavioral profiling is performed</li>
+  </ul>
 </section>
 
 <!-- ============ INFORMATION WE COLLECT ============ -->
@@ -123,7 +131,7 @@
     <h2 data-i18n="collect.title">Information we collect</h2>
   </div>
   <div class="prose">
-    <p data-i18n="collect.p1">DeTauro only collects the minimum information necessary for the app to function — nothing more. Most of what DeTauro reads, such as which app is currently open, is processed on your device to apply the focus rules you configured, and is not linked to your identity.</p>
+    <p data-i18n="collect.p1">DeTauro only collects the minimum information necessary for the app to function — nothing more. Everything DeTauro reads, such as which app is currently open, is processed locally on your device to apply the focus rules you configured. It is never uploaded and is not linked to your identity.</p>
     <p data-i18n="collect.p2">Your personal information is never sold. DeTauro does not build advertising profiles and does not share your data with data brokers.</p>
   </div>
   <div class="mini-grid">
@@ -137,7 +145,11 @@
     </div>
     <div class="mini-card">
       <i data-lucide="smartphone"></i>
-      <span data-i18n="collect.card3">Processed on-device when possible</span>
+      <span data-i18n="collect.card3">100% processed on your device</span>
+    </div>
+    <div class="mini-card">
+      <i data-lucide="key-round"></i>
+      <span data-i18n="collect.card4">No account or sign-in required</span>
     </div>
   </div>
 </section>
@@ -161,20 +173,21 @@
     <article class="perm-card">
       <div class="perm-icon"><i data-lucide="eye"></i></div>
       <h3 data-i18n="perm.usage.title">Usage Access</h3>
-      <p data-i18n="perm.usage.body">Used to detect which app is currently in use, so DeTauro can apply the focus and blocking rules you set up.</p>
+      <p data-i18n="perm.usage.body">Used to detect which app is currently in use, so DeTauro can apply the focus and blocking rules you set up. This is processed entirely on your device and is never uploaded.</p>
     </article>
 
     <article class="perm-card perm-card-wide" id="accessibility">
       <div class="perm-icon perm-icon-accent"><i data-lucide="accessibility"></i></div>
       <h3 data-i18n="perm.access.title">Accessibility Service</h3>
-      <p data-i18n="perm.access.body">Used exclusively to help you reduce distractions, by detecting configured apps or websites and applying the blocking rules you chose.</p>
+      <p data-i18n="perm.access.body">Used exclusively to help you reduce distractions, by detecting configured apps or websites and applying the blocking rules you chose. All of this happens locally, in real time, on your device.</p>
       <ul class="not-list">
         <li><span class="not-x" aria-hidden="true">✕</span><span data-i18n="perm.access.not1">Not used to collect personal conversations</span></li>
         <li><span class="not-x" aria-hidden="true">✕</span><span data-i18n="perm.access.not2">Not used to read passwords</span></li>
         <li><span class="not-x" aria-hidden="true">✕</span><span data-i18n="perm.access.not3">Not used to sell data</span></li>
         <li><span class="not-x" aria-hidden="true">✕</span><span data-i18n="perm.access.not4">Not used for advertising</span></li>
+        <li><span class="not-x" aria-hidden="true">✕</span><span data-i18n="perm.access.not5">Never transmitted off your device</span></li>
       </ul>
-      <p class="perm-note" data-i18n="perm.access.note">Data stays on your device whenever possible.</p>
+      <p class="perm-note" data-i18n="perm.access.note">All data stays on your device. Nothing is uploaded, synced, or transmitted anywhere.</p>
     </article>
 
     <article class="perm-card">
@@ -230,6 +243,7 @@
     <li data-i18n="use.li4">Restore your preferences after restarts or updates</li>
     <li data-i18n="use.li5">Enhance your overall experience</li>
   </ul>
+  <p class="prose-note" data-i18n="use.note">All of this happens locally on your device — DeTauro does not use cloud infrastructure to deliver these features.</p>
 </section>
 
 <!-- ============ DATA SECURITY ============ -->
@@ -239,19 +253,20 @@
     <h2 data-i18n="sec.title">Data security</h2>
   </div>
   <div class="prose">
-    <p data-i18n="sec.p1">DeTauro follows industry best practices to protect the information it handles. Preferences and focus data are kept in secure local storage on your device whenever possible.</p>
-    <p data-i18n="sec.p2">Where Firebase is used to support certain features, it operates under Firebase's own security standards. DeTauro takes reasonable technical and organizational measures to protect your information against loss, misuse, and unauthorized access.</p>
+    <p data-i18n="sec.p1">DeTauro follows industry best practices to protect the information it handles. Preferences and focus data are kept in secure local storage on your device, protected by Android's own operating-system-level security.</p>
+    <p data-i18n="sec.p2">Because DeTauro has no server, no cloud database, and no remote infrastructure, your data is never exposed to network transmission, server breaches, or third-party cloud providers. DeTauro takes reasonable technical measures to protect your information against loss and unauthorized local access, such as biometric locks for sensitive settings.</p>
   </div>
 </section>
 
-<!-- ============ CHILDREN'S PRIVACY ============ -->
+<!-- ============ TARGET AUDIENCE / CHILDREN'S PRIVACY ============ -->
 <section class="section reveal" id="children">
   <div class="section-head">
-    <span class="section-eyebrow" data-i18n="kids.eyebrow">Children</span>
-    <h2 data-i18n="kids.title">Children's privacy</h2>
+    <span class="section-eyebrow" data-i18n="kids.eyebrow">Who DeTauro is for</span>
+    <h2 data-i18n="kids.title">Designed for every age</h2>
   </div>
   <div class="prose">
-    <p data-i18n="kids.p1">DeTauro is not directed toward children under the age of 13, and we do not knowingly collect personal information from children.</p>
+    <p data-i18n="kids.p1">DeTauro is designed for users of all ages. It includes optional parental supervision features, and can also be used independently by adults who simply want to stay focused.</p>
+    <p data-i18n="kids.p2">The application does not knowingly collect personal information from children. As explained throughout this Policy, DeTauro does not collect, transmit, or store personal information on any server, regardless of the user's age.</p>
   </div>
 </section>
 
@@ -262,7 +277,8 @@
     <h2 data-i18n="third.title">Third-party services</h2>
   </div>
   <div class="prose">
-    <p data-i18n="third.p1">DeTauro may rely on trusted services to operate correctly, including Google Play Services, Firebase (if enabled), and Android System APIs. These providers maintain their own privacy policies, which govern how they handle data.</p>
+    <p data-i18n="third.p1">DeTauro relies only on trusted platform components to operate correctly on Android, such as the Android Operating System itself, Google Play Services (where available on the device), and, if integrated in the future, Google Play Billing for optional purchases.</p>
+    <p data-i18n="third.p2">These are system-level components required for the OS or the Play Store to function — DeTauro does not send your personal data to them, and does not use any remote database, analytics, or authentication service.</p>
   </div>
 </section>
 
@@ -273,7 +289,7 @@
     <h2 data-i18n="ret.title">Data retention</h2>
   </div>
   <div class="prose">
-    <p data-i18n="ret.p1">Information is retained only for as long as necessary to provide DeTauro's features. You may delete your application data at any time from your device settings.</p>
+    <p data-i18n="ret.p1">Because everything is stored locally, information is retained only for as long as it stays on your device — there is no server-side copy to retain. You may delete your application data at any time from your device settings, or by uninstalling the app.</p>
   </div>
 </section>
 
@@ -289,6 +305,7 @@
     <li data-i18n="rights.li3">Uninstall the application</li>
     <li data-i18n="rights.li4">Contact the developer with any questions</li>
   </ul>
+  <p class="prose-note" data-i18n="rights.note">Because there is no account and no server, uninstalling DeTauro permanently removes all of your data — there is nothing left behind on any server.</p>
 </section>
 
 <!-- ============ CHANGES ============ -->
@@ -345,11 +362,7 @@
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-brand">
-      <svg viewBox="0 0 40 40" width="22" height="22" aria-hidden="true">
-        <circle cx="20" cy="20" r="18" fill="none" stroke="var(--signal)" stroke-width="2.4"/>
-        <circle cx="20" cy="20" r="10" fill="none" stroke="var(--violet)" stroke-width="2.4" opacity="0.85"/>
-        <circle cx="20" cy="20" r="3.4" fill="var(--ember)"/>
-      </svg>
+      <img src="logo.png" alt="" width="22" height="22" style="border-radius:6px;">
       <span>DeTauro</span>
     </div>
     <p class="footer-copy">© 2026 CodeNytra. <span data-i18n="footer.rights">All rights reserved.</span></p>
