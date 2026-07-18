@@ -145,12 +145,21 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 
 .brand { display: flex; align-items: center; gap: 10px; }
 .brand-mark {
-  display: flex; align-items: center; justify-content: center;
-  width: 30px; height: 30px; border-radius: 9px;
+  display: inline-block;
+  width: 26px; height: 26px;
   background: linear-gradient(135deg, var(--brand-2), var(--brand-1));
+  -webkit-mask-image: url("logo.png");
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-image: url("logo.png");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
 }
-.brand-mark img { width: 26px; height: 26px; border-radius: 7px; object-fit: cover; }
-.brand-name { font-weight: 700; font-size: 1.05rem; letter-spacing: -0.01em; }
+.brand-name {
+  font-weight: 700; font-size: 1.05rem; letter-spacing: -0.01em;
+}
 
 .nav-links {
   display: flex; align-items: center; gap: 28px;
@@ -234,11 +243,18 @@ html[data-theme="light"] .hero::after { opacity: 0.16; }
 .hero-content { position: relative; z-index: 1; max-width: 620px; }
 
 .hero-logo {
+  display: block;
   width: 72px; height: 72px; margin: 0 auto 28px;
-  border-radius: 20px;
-  object-fit: cover;
-  box-shadow: 0 0 0 1px var(--border), 0 16px 40px -12px rgba(0,0,0,0.25), 0 0 60px -12px var(--accent-soft);
-    background: linear-gradient(135deg, var(--brand-2), var(--brand-1));
+  background: linear-gradient(135deg, var(--brand-2), var(--brand-1));
+  -webkit-mask-image: url("logo.png");
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-image: url("logo.png");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  filter: drop-shadow(0 10px 24px var(--accent-soft));
 }
 
 .eyebrow {
@@ -440,6 +456,19 @@ html[data-theme="light"] .hero::after { opacity: 0.16; }
   display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;
 }
 .footer-brand { display: flex; align-items: center; gap: 8px; font-weight: 700; }
+.footer-mark {
+  display: inline-block;
+  width: 22px; height: 22px;
+  background: linear-gradient(135deg, var(--brand-2), var(--brand-1));
+  -webkit-mask-image: url("logo.png");
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-image: url("logo.png");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
 .footer-copy { color: var(--text-tertiary); font-size: 0.85rem; }
 
 /* ---------- Back to top ---------- */
