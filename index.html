@@ -39,6 +39,7 @@
       <a href="#offline" data-i18n="nav.offline">Offline-first</a>
       <a href="#collect" data-i18n="nav.collect">Data</a>
       <a href="#permissions" data-i18n="nav.permissions">Permissions</a>
+      <a href="#ox" data-i18n="nav.ox">Ox Mode</a>
       <a href="#rights" data-i18n="nav.rights">Your rights</a>
       <a href="#contact" data-i18n="nav.contact">Contact</a>
     </nav>
@@ -66,7 +67,7 @@
     <p class="hero-kicker" data-i18n="hero.kicker">Privacy Policy</p>
     <p class="hero-sub" data-i18n="hero.subtitle">Your privacy matters. DeTauro works completely offline and processes everything locally on your device — nothing is uploaded, ever.</p>
     <div class="hero-meta">
-      <span class="pill"><span class="pill-dot"></span><span data-i18n="hero.updatedLabel">Last updated</span>&nbsp;—&nbsp;<span id="lastUpdated">July 18, 2026</span></span>
+      <span class="pill"><span class="pill-dot"></span><span data-i18n="hero.updatedLabel">Last updated</span>&nbsp;—&nbsp;<span id="lastUpdated">October 2, 2026</span></span>
       <span class="pill" data-i18n="hero.offlineBadge">100% offline · no cloud</span>
       <a class="pill pill-link" href="#permissions" data-i18n="hero.viewPermissions">View permissions</a>
     </div>
@@ -190,13 +191,13 @@
 
     <article class="perm-card">
       <div class="perm-icon"><i data-lucide="activity"></i></div>
-      <h3 data-i18n="perm.fg.title">Foreground Service</h3>
+      <h3 data-i18n="perm.fg.title">Foreground Service (Focus timer)</h3>
       <p data-i18n="perm.fg.body">Keeps focus mode and protection features running reliably while you have them enabled.</p>
     </article>
 
     <article class="perm-card">
       <div class="perm-icon"><i data-lucide="battery-charging"></i></div>
-      <h3 data-i18n="perm.batt.title">Ignore Battery Optimization</h3>
+      <h3 data-i18n="perm.batt.title">Battery optimization settings (optional)</h3>
       <p data-i18n="perm.batt.body">Lets DeTauro keep protecting you through long focus sessions without being interrupted by aggressive battery-saving features.</p>
     </article>
 
@@ -225,6 +226,43 @@
       <p data-i18n="perm.vib.body">Provides subtle haptic feedback for important interactions.</p>
     </article>
 
+    <article class="perm-card">
+      <div class="perm-icon"><i data-lucide="layers"></i></div>
+      <h3 data-i18n="perm.overlay.title">Display over other apps</h3>
+      <p data-i18n="perm.overlay.body">Used only to open DeTauro's block screen on top of an app you chose to block. It does not read or record what is on screen.</p>
+    </article>
+
+    <article class="perm-card">
+      <div class="perm-icon"><i data-lucide="shield"></i></div>
+      <h3 data-i18n="perm.admin.title">Device Administrator (optional)</h3>
+      <p data-i18n="perm.admin.body">Used only by Ox Mode to help prevent DeTauro from being uninstalled while a lock you chose is active. It only uses the “lock screen” policy: it is not used to access your data, wipe the device or change your settings. You can deactivate it in Settings > Security > Device admin apps, unless an Ox Mode lock you started is blocking that screen.</p>
+    </article>
+
+    <article class="perm-card">
+      <div class="perm-icon"><i data-lucide="rocket"></i></div>
+      <h3 data-i18n="perm.autostart.title">Auto-start and background activity (optional)</h3>
+      <p data-i18n="perm.autostart.body">Some phones close apps in the background. DeTauro can open your phone's own auto-start or battery page so you can allow it to keep running. Nothing is read or collected through these settings.</p>
+    </article>
+
+    <article class="perm-card">
+      <div class="perm-icon"><i data-lucide="app-window"></i></div>
+      <h3 data-i18n="perm.apps.title">List of installed apps</h3>
+      <p data-i18n="perm.apps.body">DeTauro can see installed apps that have a launcher icon, so you can pick apps to block and see your screen time. This list stays on your device. DeTauro does not request the QUERY_ALL_PACKAGES permission.</p>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============ OX MODE ============ -->
+<section class="section reveal" id="ox">
+  <div class="section-head">
+    <span class="section-eyebrow" data-i18n="ox.eyebrow">Self-control</span>
+    <h2 data-i18n="ox.title">Ox Mode: locks you choose</h2>
+  </div>
+  <div class="prose">
+    <p data-i18n="ox.p1">Ox Mode is optional. You choose which blockers to lock, for a set time or permanently. DeTauro shows a warning and asks you to confirm before a lock starts.</p>
+    <p data-i18n="ox.p2">While a lock you started is active, DeTauro uses the Accessibility Service to block the system screens you selected in Ox Mode customization: uninstalling the app, removing it as a device administrator, turning off the Accessibility Service, turning off battery optimization, and changing the device language. You can switch each of these on or off in Ox Mode customization before you start a lock.</p>
+    <p data-i18n="ox.p3">Timed locks end automatically at the time you chose. A permanent lock cannot be turned off from inside the app, and DeTauro warns you that it is irreversible before you confirm it, so choose it carefully. Nothing in Ox Mode is sent off your device.</p>
   </div>
 </section>
 
@@ -371,7 +409,7 @@
   <i data-lucide="arrow-up"></i>
 </button>
 
-<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js" crossorigin="anonymous"></script>
 <script src="script.js"></script>
 </body>
 </html>
