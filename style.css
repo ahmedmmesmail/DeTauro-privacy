@@ -71,8 +71,6 @@ html[data-theme="light"] {
   --accent-border: rgba(79, 130, 43, 0.22);
   --hero-glow-1: rgba(177, 234, 119, 0.35);
   --hero-glow-2: rgba(79, 130, 43, 0.14);
-  --hero-glow-1: rgba(79, 124, 255, 0.16);
-  --hero-glow-2: rgba(139, 107, 255, 0.12);
 }
 
 /* ---------- Reset ---------- */
