@@ -498,7 +498,7 @@
 
   /* ===================== Last updated (dynamic, once) ===================== */
   // Fixed policy date — update this constant whenever the policy content changes.
-  const POLICY_LAST_UPDATED = new Date("2026-07-18T00:00:00Z");
+  const POLICY_LAST_UPDATED = new Date("2026-10-02T00:00:00Z");
   function formatDate(lang) {
     return POLICY_LAST_UPDATED.toLocaleDateString(lang === "ar" ? "ar-EG" : "en-US", {
       year: "numeric", month: "long", day: "numeric"
