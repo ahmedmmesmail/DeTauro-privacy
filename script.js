@@ -112,9 +112,9 @@
       "use.note": "All of this happens locally on your device — DeTauro does not use cloud infrastructure to deliver these features.",
       "ox.eyebrow": "Self-control",
       "ox.title": "Ox Mode: locks you choose",
-      "ox.p1": "Ox Mode is optional. You choose which blockers to lock, for a set time or permanently. DeTauro shows a warning and asks you to confirm before a lock starts.",
-      "ox.p2": "While a lock you started is active, DeTauro uses the Accessibility Service to block the system screens you selected in Ox Mode customization: uninstalling the app, removing it as a device administrator, turning off the Accessibility Service, turning off battery optimization, and changing the device language. You can switch each of these on or off in Ox Mode customization before you start a lock.",
-      "ox.p3": "Timed locks end automatically at the time you chose. A permanent lock cannot be turned off from inside the app, and DeTauro warns you that it is irreversible before you confirm it, so choose it carefully. Nothing in Ox Mode is sent off your device.",
+      "ox.p1": "Ox Mode is optional. You choose which blockers to lock and for how long. DeTauro shows a warning and asks you to confirm before a lock starts.",
+      "ox.p2": "All Ox Mode restrictions are off by default. If you turn them on in Ox Mode customization before you start a lock, then while that lock is active DeTauro uses the Accessibility Service to block the matching system screens: uninstalling DeTauro or turning off its Accessibility Service, removing it as a device administrator, changing battery optimization for DeTauro, and changing the device language. You cannot change these restrictions while a lock is active.",
+      "ox.p3": "Every lock ends automatically at the time you chose. Ox Mode has no permanent lock. Nothing in Ox Mode is sent off your device.",
 
       "sec.eyebrow": "Protection",
       "sec.title": "Data security",
@@ -272,10 +272,10 @@
       "use.note": "كل هذا يحدث محلياً على جهازك — لا يعتمد DeTauro على أي بنية تحتية سحابية لتقديم هذه الميزات.",
       "ox.eyebrow": "التحكم الذاتي",
       "ox.title": "Ox Mode: أقفال تختارها أنت",
-      "ox.p1": "Ox Mode اختياري. أنت تختار الحاجبات التي تريد قفلها، لمدة محددة أو بشكل دائم. ويعرض DeTauro تحذيراً ويطلب منك التأكيد قبل بدء أي قفل.",
-      "ox.p2": "أثناء قفل بدأته، يستخدم DeTauro خدمة إمكانية الوصول لحجب شاشات النظام التي اخترتها في تخصيص Ox Mode: حذف التطبيق، وإزالته من مديري الجهاز، وإيقاف خدمة إمكانية الوصول، وإيقاف تحسين البطارية، وتغيير لغة الجهاز. يمكنك تفعيل أو إيقاف كل واحد منها من تخصيص Ox Mode قبل بدء القفل.",
-      "ox.p3": "تنتهي الأقفال المؤقتة تلقائياً في الوقت الذي اخترته. أما القفل الدائم فلا يمكن إيقافه من داخل التطبيق، ويحذرك DeTauro من أنه لا رجعة فيه قبل أن تؤكده، فاختره بعناية. ولا يُرسل أي شيء من Ox Mode خارج جهازك.",
-
+      "ox.p1": "Ox Mode اختياري. أنت تختار الحاجبات التي تريد قفلها ولأي مدة. ويعرض DeTauro تحذيراً ويطلب منك التأكيد قبل بدء أي قفل.",
+      "ox.p2": "جميع قيود Ox Mode متوقفة افتراضياً. إذا فعّلتها في تخصيص Ox Mode قبل بدء القفل، فأثناء ذلك القفل يستخدم DeTauro خدمة إمكانية الوصول لحجب شاشات النظام المطابقة: حذف DeTauro أو إيقاف خدمة إمكانية الوصول الخاصة به، وإزالته من مديري الجهاز، وتغيير تحسين البطارية للتطبيق، وتغيير لغة الجهاز. لا يمكنك تغيير هذه القيود أثناء قفل نشط.",
+      "ox.p3": "ينتهي كل قفل تلقائياً في الوقت الذي اخترته. لا يوجد قفل دائم في Ox Mode. ولا يُرسل أي شيء من Ox Mode خارج جهازك.",
+      
       "sec.eyebrow": "الحماية",
       "sec.title": "أمان البيانات",
       "sec.p1": "يتبع DeTauro أفضل الممارسات المتبعة في هذا المجال لحماية المعلومات التي يتعامل معها. يتم الاحتفاظ بالتفضيلات وبيانات التركيز في تخزين محلي آمن على جهازك، محمي بواسطة الأمان الخاص بنظام تشغيل أندرويد نفسه.",
